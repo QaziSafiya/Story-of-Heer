@@ -1,0 +1,241 @@
+@import "../assets/styles/variables.scss";
+
+.container{
+    max-width: 80rem;
+    background-color: black;
+    // background-color: rgb(35, 37, 36);
+    box-shadow: 0rem 2rem 5rem rgb(27,27,27,.3);
+    margin: 8rem auto;
+min-height: 50rem;
+display: grid;
+grid-template-rows:min-content min-content 1fr min-content;
+grid-template-columns: 1fr;
+
+padding: 3rem 3rem;
+// justify-content: center;
+// align-items: center;
+@media only screen and (max-width:$bp-small){
+    // grid-template-columns: 1fr ;
+    padding: 0;
+    margin: 0;
+  }
+
+// cover image
+
+.front-cover{
+  
+    background-image: url("https://i.pinimg.com/originals/fc/67/4b/fc674b84da2efa620f125cb1b4a63a4a.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15rem ;
+    // height: 80vh;
+   backdrop-filter: .2;
+   opacity: .6;
+
+
+   @media only screen and (max-width:$bp-medium){
+    // grid-template-columns: 1fr ;
+    padding: 15rem ;
+  }
+
+   @media only screen and (max-width:$bp-small){
+    // grid-template-columns: 1fr ;
+    padding: 0rem 13rem ;
+  }
+}
+
+.heading-1{
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    // letter-spacing: 10px;
+
+
+    @media only screen and (max-width:$bp-small){
+        // grid-template-columns: 1fr ;
+        font-size: 3.5rem;
+       
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+      }
+
+   
+}
+
+
+.intro{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.story-intro{
+    // background-color: rgb(162, 204, 190);
+    padding: 6rem 3rem;
+    
+}
+.heading-2{
+    font-size: 3rem;
+
+    margin-bottom: 3rem;
+   color: aliceblue;
+}
+.feather{
+    margin-bottom: 2rem;
+}
+.feather::before{
+    content: '──────────────────────────────────────';
+	margin-right: 0.6em;
+	color: #686868;
+}
+
+.feather::after{
+    content: '───────────────────────────────────────';
+	margin-right: 0.6em;
+	color: #686868;
+
+}
+.icon{
+    color: white;  
+    font-size: 3rem;
+    
+
+}
+
+.feather2{
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+
+.feather2::before{
+    content: '──────────────────────────────────────';
+	margin-right: 0.6em;
+	color: #686868;
+}
+
+.feather2::after{
+    content: '───────────────────────────────────────';
+	margin-right: 0.6em;
+	color: #686868;
+
+}
+.scenes{
+    // background-color: rgb(233, 138, 103);
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(6 , min-content);
+    color: white;
+}
+
+
+
+.scenes-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+//    border: 2px solid green;
+   margin: 2rem 3rem;
+
+
+   @media only screen and (max-width:$bp-small){
+    // grid-template-columns: 1fr ;
+    
+  }
+
+}
+
+.story-para{
+    color: white;
+    text-align: left;
+    padding-right: 3rem;
+}
+.heading{
+// border: 2px solid blue;
+font-size: 4rem;
+
+}
+.scenes-1__img{
+    width: 28rem;
+    height: 18rem;
+
+    @media only screen and (max-width:$bp-small){
+        // grid-template-columns: 1fr ;
+        width: 18rem;
+        height: 18rem;
+      }
+}
+
+.footer{
+// background-color: rgb(114, 127, 123);
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr;
+grid-gap:2rem;
+color:white
+
+}
+
+.heading-footer{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.heading-3{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+.heading-follow{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+
+
+.footer-icon{
+
+    margin-bottom: 4rem;
+}
+
+.follow-icons{
+    font-size: 2.4rem;
+    margin-right: 2rem;
+  
+}
+
+.footer-part2{
+    // background-color: aquamarine;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.footer-description{
+    margin-bottom: 1rem;
+}
+
+
+.description{
+    margin-bottom: 2rem;
+}
+
+.contact{
+    display: flex;
+   padding: 4rem;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.contact-para{
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+
+}
+
+
+
+
+
+
